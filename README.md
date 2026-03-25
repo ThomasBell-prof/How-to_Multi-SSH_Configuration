@@ -2,15 +2,11 @@
 
 > by: Thomas Bell
 
-## Intro
-
-```yaml
-The purpose of this guide is to help those with multiple GitHub accounts whether professional or personal
-on a single computer to start using SSH keys for more secure accessibility
-```
 ---
 
 ## Reasons:
+
+> The purpose of this guide is to help those with multiple GitHub accounts whether professional or personal on a single computer to start using SSH keys for more secure accessibility
 
 - Industry Standard
 - Clean and Scalable
@@ -19,24 +15,19 @@ on a single computer to start using SSH keys for more secure accessibility
 
 ### 1. Generate SSH keys for each account
 
-```yaml
 > Click copy and paste the code in your terminal and press enter, one at a time to create each ssh key
-```
 
-#### Professional 
-
+#### Professional
 ```bash
 ssh-keygen -t ed25519 -f ~/.ssh/github_professional_key -C "your-professional-email@provider.com"
 ```
 
-#### Personal 
-
+#### Personal
 ```bash
 ssh-keygen -t ed25519 -f ~/.ssh/github_personal_key -C "your-personal-email@provider.com"
 ```
 
-#### Freelance 
-
+#### Freelance
 ```bash
 ssh-keygen -t ed25519 -f ~/.ssh/github_freelance_key -C "your-freelance-email@provider.com"
 ```
