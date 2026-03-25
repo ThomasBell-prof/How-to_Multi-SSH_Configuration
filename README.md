@@ -166,7 +166,7 @@ git clone git@github-professional:"your-professional-username"/"your-professiona
 > You are done at this point.  Happy coding and good luck!
 ---
 
-#### For your information
+#### ℹ️ FYI
 
 > If at any time you made a mistake and need to delete a key from your machine, enter the following code.
 ```bash
@@ -179,4 +179,4 @@ ssh-add -D
 ```
 ---
 
-I hope this repo has been helpful.  Thank you!
+🐙 I hope this repo has been helpful.  Thank you!
