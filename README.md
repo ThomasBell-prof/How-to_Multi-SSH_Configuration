@@ -42,7 +42,8 @@ ssh-keygen -t ed25519 -f ~/.ssh/github_personal_key -C "your-personal-email@prov
 ssh-keygen -t ed25519 -f ~/.ssh/github_freelance_key -C "your-freelance-email@provider.com"
 ```
 
-> -f sets the file name and location for the key pair, ultimately creating a public and private key. -C adds a comment to Github so that it may be easily identifiable.
+> -f sets the file name and location for the key pair, ultimately creating a public and private key.
+>> -C adds a comment to Github so that it may be easily identifiable.
 ---
 
 ### 2️⃣ Create SSH Config file
@@ -55,8 +56,8 @@ chmod 700 ~/.ssh
 ```
 
 > What the above code does:
->
-> > It ensures the config file is readable/writable only by you and the directory is only accessible by you. If you run the above code and the files already exists, it will not hurt anything.
+>> It ensures the config file is readable/writable only by you and the directory is only accessible by you.
+>>> If you run the above code and the files already exists, it will not hurt anything.
 
 ```bash
 code ~/.ssh/config
@@ -68,7 +69,7 @@ code ~/.ssh/config
 ### 3️⃣ Edit Config file
 
 - vs-code allows you to use the same config file to add multiple accounts
-    > Click copy and paste into your config file.
+> Click copy and paste into your config file.
 
 ```yaml
 # Professional Github account
