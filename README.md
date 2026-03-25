@@ -12,7 +12,6 @@
 - Clean and Scalable
 - No login / logout switching necessary
 - Supports unlimited user accounts
-
 ---
 
 ### 1️⃣ Generate SSH keys for each account
@@ -44,7 +43,6 @@ ssh-keygen -t ed25519 -f ~/.ssh/github_freelance_key -C "your-freelance-email@pr
 ```
 
 > -f sets the file name and location for the key pair, ultimately creating a public and private key. -C adds a comment to Github so that it may be easily identifiable.
-
 ---
 
 ### 2️⃣ Create SSH Config file
@@ -65,7 +63,6 @@ code ~/.ssh/config
 ```
 
 > This adds the config file even if it doesn't exist and opens it in vs-code.
-
 ---
 
 ### 3️⃣ Edit Config file
@@ -94,12 +91,11 @@ IdentityFile ~/.ssh/github_freelance_key
 ```
 
 > Be sure to save the file before exiting
-
 ---
 
 ### 4️⃣ Setup Github SSH
 
-- 🐙 Login to GitHub
+ 🐙 Login to your "Professional" GitHub account
 
  ↳ 👤 Click your profile picture in the top right corner
 
@@ -108,3 +104,30 @@ IdentityFile ~/.ssh/github_freelance_key
  ↳ 🔐 Choose **SSH and GPG keys**
 
  ↳ ➕ Click **New SSH key**
+
+- Give the key a title
+- Key type = Authentication Key
+- For the Key box you need to copy your key and paste it there
+> Let's do this step programmatically from your terminal...
+```bash
+cat ~/.ssh/github-professional_key.pub
+```
+
+↳ Click **Add SSH key** 
+> Repeat step 4 for each account you have and remember to call the appropriate public key (personal, freelance, etc.)
+---
+
+### 5️⃣ Test
+
+- In your vs-code terminal
+```bash
+ssh -T git@github-professional
+```
+
+```bash
+ssh -T git@github-personal
+```
+
+```bash
+ssh -T git@github-freelance
+```
