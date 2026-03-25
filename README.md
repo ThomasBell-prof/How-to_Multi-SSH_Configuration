@@ -41,7 +41,7 @@ chmod 600 ~/.ssh/config
 chmod 700 ~/.ssh
 ```
 > what the above code does: it ensures the config file is readable/writable only by you and the directory is only accessible by you
->> if you run the above code and the files already exist, it will not hurt anything.
+>> if you run the above code and the files already exists, it will not hurt anything.
 
 ```bash
 code ~/.ssh/config
@@ -50,7 +50,8 @@ code ~/.ssh/config
 ---
 
 ### 3️⃣ Edit Config file
-- In VS-code you can use the same config file to add multiple accounts
+- vs-code allows you to use the same config file to add multiple accounts
+> click copy and paste into your config file
 
 ```yaml
 # Professional Github account
