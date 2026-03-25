@@ -1,4 +1,4 @@
-# 📚👨🏽‍🎓&nbsp;Using&nbsp;SSH&nbsp;Keys&nbsp;to&nbsp;Manage&nbsp;Multiple&nbsp;GitHub&nbsp;Identities&nbsp;🔐
+<h1><span style="white-space: nowrap;">📚👨🏽‍🎓 Using SSH Keys to Manage Multiple GitHub Identities 🔐</span></h1>
 
 > A Developer’s Guide to Multi‑GitHub SSH Configuration
 >
