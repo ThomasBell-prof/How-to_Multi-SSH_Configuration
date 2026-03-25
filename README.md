@@ -134,6 +134,6 @@ ssh -T git@github-freelance
 
 - If everything was done correctly up unto this point, you should receive a terminal message of:
 ```diff
-+ Hi username! You've successfully authenticated, but GitHub does not provide shell access.
+Hi username! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 ---
